@@ -777,6 +777,24 @@ img {
   }
 }
 
+.c-list {
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
+.c-list--num ol {
+  margin-bottom: 20px;
+}
+.c-list--num ol:nth-child(2) {
+  margin-left: 18px;
+}
+.c-list--bul ul {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.c-list--bul ul:nth-child(2) {
+  margin-left: 18px;
+}
+
 .p-access {
   position: relative;
   background-color: #000;
