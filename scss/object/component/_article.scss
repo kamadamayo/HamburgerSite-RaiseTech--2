@@ -10,13 +10,7 @@
         color: variable.$text-color;
         display: block;
         margin: 10px auto;
-        min-height: 162px;/*
-        @include mixin.tab {
-            margin: 10px auto;
-        }
-        @include mixin.pc {
-            width: 89%;
-        }*/
+        min-height: 162px;
     }
     dt {
         font-weight: 700;
