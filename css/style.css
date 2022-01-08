@@ -678,13 +678,6 @@ img {
   display: block;
   margin: 10px auto;
   min-height: 162px;
-  /*
-  @include mixin.tab {
-      margin: 10px auto;
-  }
-  @include mixin.pc {
-      width: 89%;
-  }*/
 }
 .c-article dt {
   font-weight: 700;
@@ -698,6 +691,50 @@ img {
 }
 .c-article dd {
   font-size: 1.6rem;
+}
+.c-article h2, .c-article h3, .c-article h4, .c-article h5, .c-article h6 {
+  font-weight: 700;
+  margin-top: 30px;
+}
+.c-article h2 {
+  font-size: 2.8rem;
+}
+.c-article h3 {
+  font-size: 2.4rem;
+}
+.c-article h4, .c-article h5, .c-article h6 {
+  font-size: 2rem;
+}
+.c-article h6 {
+  margin-bottom: 30px;
+}
+.c-article p {
+  font-size: 1.6rem;
+}
+.c-article blockquote {
+  background-color: #F5F5F5;
+  padding: 30px 20px;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.c-article blockquote p {
+  margin-bottom: 30px;
+}
+.c-article blockquote a {
+  color: #4A6C9B;
+}
+.c-article figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+.c-article figure img {
+  width: 38%;
+  max-height: 23.73vw;
+}
+.c-article figure figcaption {
+  margin: 0 10px;
 }
 
 #overlay {
@@ -1118,6 +1155,10 @@ img {
 
 .u-mg__auto {
   margin: 0 auto;
+}
+
+.u-mg--30-auto {
+  margin: 30px auto;
 }
 
 .u-visibility__sp {
