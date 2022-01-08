@@ -4,6 +4,8 @@
 
 .c-article {
     width: 100%;
+    font-size: 1.6rem;
+    color: variable.$text-color;
     dl {
         background-color: rgba(255,255,255,0.8);
         padding: 19px 14px 20px 10px;
@@ -19,10 +21,10 @@
         @include mixin.tab {
             margin-bottom: 25px;
         }
-    }
+    }/*
     dd {
         font-size: 1.6rem;
-    }
+    }*/
     h2,h3,h4,h5,h6 {
         font-weight: 700;
         margin-top: 30px;
@@ -38,14 +40,14 @@
     }
     h6 {
         margin-bottom: 30px;
-    }
+    }/*
     p {
         font-size: 1.6rem;
-    }
+    }*/
     blockquote {
         background-color: #F5F5F5;
         padding: 30px 20px;
-        font-size: 1.6rem;
+        //font-size: 1.6rem;
         margin-bottom: 30px;
         p {
             margin-bottom: 30px;
@@ -63,6 +65,22 @@
         }
         figcaption {
             margin: 0 10px;
+        }
+    }
+    pre {
+        width: 100%;
+        background-color: #F5F5F5;
+        padding: 50px;
+    }
+    table {
+        border-collapse: collapse;
+        td {
+            border: 1px solid;
+            width: 36vw;
+            padding: 27px 0 27px 27px;
+            &:nth-child(2) {
+                width: 53vw;
+            }
         }
     }
 }

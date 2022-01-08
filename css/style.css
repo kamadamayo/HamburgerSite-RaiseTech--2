@@ -670,6 +670,16 @@ img {
 
 .c-article {
   width: 100%;
+  font-size: 1.6rem;
+  color: #3C2A10;
+  /*
+  dd {
+      font-size: 1.6rem;
+  }*/
+  /*
+  p {
+      font-size: 1.6rem;
+  }*/
 }
 .c-article dl {
   background-color: rgba(255, 255, 255, 0.8);
@@ -689,9 +699,6 @@ img {
     margin-bottom: 25px;
   }
 }
-.c-article dd {
-  font-size: 1.6rem;
-}
 .c-article h2, .c-article h3, .c-article h4, .c-article h5, .c-article h6 {
   font-weight: 700;
   margin-top: 30px;
@@ -708,13 +715,9 @@ img {
 .c-article h6 {
   margin-bottom: 30px;
 }
-.c-article p {
-  font-size: 1.6rem;
-}
 .c-article blockquote {
   background-color: #F5F5F5;
   padding: 30px 20px;
-  font-size: 1.6rem;
   margin-bottom: 30px;
 }
 .c-article blockquote p {
@@ -735,6 +738,22 @@ img {
 }
 .c-article figure figcaption {
   margin: 0 10px;
+}
+.c-article pre {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 50px;
+}
+.c-article table {
+  border-collapse: collapse;
+}
+.c-article table td {
+  border: 1px solid;
+  width: 36vw;
+  padding: 27px 0 27px 27px;
+}
+.c-article table td:nth-child(2) {
+  width: 53vw;
 }
 
 #overlay {
@@ -779,7 +798,6 @@ img {
 
 .c-list {
   font-size: 1.6rem;
-  margin-top: 30px;
 }
 .c-list--num ol {
   margin-bottom: 20px;
