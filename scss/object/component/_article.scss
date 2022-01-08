@@ -1,0 +1,32 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.c-article {
+    width: 100%;
+    dl {
+        background-color: rgba(255,255,255,0.8);
+        padding: 19px 14px 20px 10px;
+        color: variable.$text-color;
+        display: block;
+        margin: 10px auto;
+        min-height: 162px;/*
+        @include mixin.tab {
+            margin: 10px auto;
+        }
+        @include mixin.pc {
+            width: 89%;
+        }*/
+    }
+    dt {
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        @include mixin.tab {
+            margin-bottom: 25px;
+        }
+    }
+    dd {
+        font-size: 1.6rem;
+    }
+}

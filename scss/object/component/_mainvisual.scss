@@ -1,0 +1,73 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.c-mainvisual {
+    background-color: #000;
+    img {
+        aspect-ratio: 375/285;
+        @include mixin.tab {
+            aspect-ratio: 834/285;
+        }
+        @include mixin.pc {
+            aspect-ratio: 1553/530;
+        }
+    }
+    &__sp { display: block !important;}
+    &__tab { display: none !important;}
+    &__pc { display: none !important;}
+    @include mixin.tab {
+        &__sp { display: none !important;}
+        &__tab { display: block !important;}
+        &__pc { display: none !important;}
+    }
+    @include mixin.pc {
+        &__sp { display: none !important;}
+        &__tab { display: none !important;}
+        &__pc { display: block !important;}
+    }
+    &__headline {
+        position: absolute;
+        color: #fff;
+        z-index: 600;
+        padding-top: 27.466%;
+        padding-left: 9.8666%;
+        width: 100%;
+        @include mixin.tab {
+            display: flex;
+            align-items: center;
+            padding-top: 12.23%;
+        }
+        @include mixin.pc {
+            padding-top: 5.5%;
+        }
+        h2 {
+            font-size: 9.6vw;
+            font-family: variable.$headline-font;
+            @include mixin.tab {
+                font-size: 7.19vw;
+            }
+            @include mixin.pc {
+                font-size: 3.8vw;
+            }
+        }
+        h4 {
+            font-size: 4.26vw;
+            @include mixin.tab {
+                font-size: 1.92vw;
+                margin-left: 2.4%;
+            }
+            @include mixin.pc {
+                font-size: 1.1vw;
+            }
+        }
+    }
+    &__archive{
+        img {
+            opacity: .5;
+            @include mixin.pc {
+                aspect-ratio: 6/1;
+            }
+        }
+    }
+}
