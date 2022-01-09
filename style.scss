@@ -22,7 +22,6 @@
 @use './scss/object/component/button';
 @use './scss/object/component/title';
 @use './scss/object/component/mainvisual';
-@use './scss/object/component/article';
 @use './scss/object/component/overlay';
 @use './scss/object/component/detail';
 @use './scss/object/component/list';
@@ -37,6 +36,7 @@
 @use './scss/object/project/slidemenu';
 @use './scss/object/project/post';
 @use './scss/object/project/pagination';
+@use './scss/object/project/article';
 
 /* Utility
 -----------------------------------------------*/
@@ -45,3 +45,4 @@
 @use './scss/object/utility/extend';
 @use './scss/object/utility/visibility';
 @use './scss/object/utility/width';
+@use './scss/object/utility/img';

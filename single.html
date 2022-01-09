@@ -21,7 +21,7 @@
     <div id="overlay" class="overlay"></div>
     <div id="c-grid">
         <header class="l-header c-grid">
-            <button id="c-btn" class="c-btn__menu u-mg__right">Menu</button>
+            <button id="c-btn" class="c-btn__menu u-mg--menu">Menu</button>
             <h1 class="c-ttl">Hamburger</h1>
             <div class="p-searchform">
                 <div class="p-searchform__box">
@@ -32,15 +32,15 @@
         </header>
         <!--↑ ここまでこのまま-->   
         <main class="l-main c-grid">
-            <div class="c-mainvisual">
-                <div class="c-mainvisual__headline">
-                    <h2>チーズバーガー</h2>
+            <div class="c-mainvisual c-mainvisual--another">
+                <div class="c-mainvisual__headline--another">
+                    <h1>h1 チーズバーガー</h1>
                 </div>
-                <img src="./images/single/single-page__ttl.png" alt="" class="c-mainvisual__sp">
-                <img src="./images/single/single-page__ttl-tab.png" alt="" class="c-mainvisual__tab">
-                <img src="./images/single/single-page__ttl-pc.png" alt="" class="c-mainvisual__pc">
+                <img src="./images/mainvisual/single-sp.png" alt="" class="c-mainvisual__sp">
+                <img src="./images/mainvisual/single--tab.png" alt="" class="c-mainvisual__tab">
+                <img src="./images/mainvisual/single--pc.png" alt="" class="c-mainvisual__pc">
             </div>
-            <article class="c-article u-width__article u-mg--30-auto">
+            <article class="p-article u-width--89 u-mg--tb30-lr-auto">
                 <h2>見出しh2</h2>
                 <p>
                     Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -87,8 +87,8 @@
                     </figcaption>
                     <img src="/images/single/card.png" alt="">
                 </figure>
-                <img src="/images/single/card.png" class="u-width__article" alt="">
-                <div class="c-grid--wrapper">
+                <img src="/images/single/card.png" class="u-width--89 u-img--special" alt="">
+                <div id="c-grid--wrapper">
                     <img src="/images/single/card.png" alt="">
                     <img src="/images/single/card.png" alt="">
                     <img src="/images/single/card.png" alt="">
@@ -99,7 +99,7 @@
                     <img src="/images/single/card.png" alt="">
                     <img src="/images/single/card.png" alt="">
                 </div>
-                <div class="c-list u-width__article u-mg--30-auto">
+                <div class="c-list u-width--89 u-mg--tb30-lr-auto">
                     <div class="c-list--num">
                         <ol>
                             <li>リストリストリスト</li>
@@ -129,7 +129,7 @@
                         </ul>
                     </div>
                 </div>
-                <pre class="u-mg--30-auto">
+                <pre class="u-mg--tb30-lr-auto">
                     <code>
                         &lt;html&gt;<!--エスケープ処理-->
                             &lt;head&gt;
@@ -139,7 +139,7 @@
                         &lt;/html&gt;
                     </code>
                 </pre>
-                <table class="u-mg--30-auto">
+                <table class="u-mg--tb30-lr-auto">
                     <tr>
                         <td>テーブル</td>
                         <td>テーブル</td>
@@ -157,8 +157,12 @@
                         <td>テーブル</td>
                     </tr>
                 </table>
-                <button class="c-btn u-mg--30-auto">ボタン</button>
-                <p>boldboldboldboldboldboldbold</p>
+                <button class="c-btn c-btn--detail u-width--89">ボタン</button>
+                <div class="c-article__text">
+                    <p>
+                        boldboldboldboldboldboldbold
+                    </p>
+                </div>
             </article>
             <!--ここから検討-->
             <div class="p-pagination">
@@ -189,14 +193,14 @@
         <!--↓ここからこのまま-->
         <aside id="p-slidemenu" class="l-sidebar l-sidebar__gradient c-grid p-slidemenu u-pd12">
             <button class="c-btn__menu c-btn__heading">Menu</button>
-            <button id="c-btn__active" class="c-btn__menu c-btn__close u-mg__right">
+            <button id="c-btn__active" class="c-btn__menu c-btn__close u-mg--menu">
                 <span></span>
                 <span></span>
             </button>
             <div class="p-sidebar__menu">
                 <ul>
                     <h2>バーガー</h2>
-                    <div class="u-mg37">
+                    <div class="u-mg--tb37">
                         <li><a href="">ハンバーガー</a></li>
                         <li><a href="">チーズバーガー</a></li>
                         <li><a href="">テリヤキバーガー</a></li>
@@ -208,7 +212,7 @@
                 </ul>
                 <ul>
                     <h2>サイド</h2>
-                    <div class="u-mg37">
+                    <div class="u-mg--tb37">
                         <li><a href="">ポテト</a></li>
                         <li><a href="">サラダ</a></li>
                         <li><a href="">ナゲット</a></li>
@@ -217,7 +221,7 @@
                 </ul>
                 <ul>
                     <h2>ドリンク</h2>
-                    <div class="u-mg37">
+                    <div class="u-mg--tb37">
                         <li><a href="">コーラ</a></li>
                         <li><a href="">ファンタ</a></li>
                         <li><a href="">オレンジ</a></li>

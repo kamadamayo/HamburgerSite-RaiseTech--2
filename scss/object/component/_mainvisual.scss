@@ -2,6 +2,35 @@
 @use '../../foundation/mixin';
 @use '../../foundation/variable';
 
+%headline {
+    position: absolute;
+    color: #fff;
+    z-index: 600;
+    width: 100%;
+}
+
+%h2 {
+    font-size: 9.6vw;
+    font-family: variable.$headline-font;
+    @include mixin.tab {
+        font-size: 7.19vw;
+    }
+    @include mixin.pc {
+        font-size: 3.8vw;
+    }
+}
+
+%h4 {
+    font-size: 4.26vw;
+    @include mixin.tab {
+        font-size: 1.92vw;
+        margin-left: 2.4%;
+    }
+    @include mixin.pc {
+        font-size: 1.1vw;
+    }
+}
+
 .c-mainvisual {
     background-color: #000;
     img {
@@ -27,9 +56,7 @@
         &__pc { display: block !important;}
     }
     &__headline {
-        position: absolute;
-        color: #fff;
-        z-index: 600;
+        @extend %headline;
         padding-top: 27.466%;
         padding-left: 9.8666%;
         width: 100%;
@@ -42,31 +69,41 @@
             padding-top: 5.5%;
         }
         h2 {
-            font-size: 9.6vw;
-            font-family: variable.$headline-font;
-            @include mixin.tab {
-                font-size: 7.19vw;
-            }
-            @include mixin.pc {
-                font-size: 3.8vw;
-            }
+            @extend %h2;
         }
         h4 {
-            font-size: 4.26vw;
+            @extend %h4;
+        }
+        &--another {
+            @extend %headline;
+            padding-top: 28%;
+            padding-left: 7%;
             @include mixin.tab {
-                font-size: 1.92vw;
-                margin-left: 2.4%;
+                padding-top: 25%;
             }
             @include mixin.pc {
-                font-size: 1.1vw;
+                padding-top: 13.5%;
+            }
+            h1 {
+                @extend %h2;
             }
         }
     }
-    &__archive{
+    &--archive {
         img {
             opacity: .5;
             @include mixin.pc {
                 aspect-ratio: 6/1;
+            }
+        }
+    }
+    &--another {
+        img {
+            @include mixin.tab {
+                aspect-ratio: 834/500;
+            }
+            @include mixin.pc {
+                aspect-ratio: 1553/500;
             }
         }
     }

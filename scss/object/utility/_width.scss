@@ -2,6 +2,12 @@
 @use '../../foundation/mixin';
 @use '../../foundation/variable';
 
-.u-width__article {
+.u-width--89 {
     width: 89%;
+}
+//これ考え直す
+.u-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
