@@ -32,7 +32,8 @@
         border: variable.$headline-color 1px solid;
         border-radius: 10px;
         height: 46px;
-        background-color: #F2EDE9;
+        //background-color: #F2EDE9;
+        background-image: linear-gradient(#F2EDE9,#DED8D3);
         padding: 12px 23px;
         margin-left: 12px;
         @include mixin.pc {

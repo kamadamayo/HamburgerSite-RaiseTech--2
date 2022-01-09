@@ -494,7 +494,8 @@ img {
   cursor: pointer;
 }
 .c-btn--detail {
-  background-color: #F2EDE9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
+  background-image: linear-gradient(#F2EDE9, #DED8D3);
   padding: 28px 0;
   border-color: #707070;
   border: 1px solid;
@@ -936,7 +937,7 @@ img {
 .p-sidebar__menu ul li {
   cursor: pointer;
   display: block;
-  margin-left: 17.983%;
+  margin-left: 20px;
   line-height: 2.4;
 }
 .p-sidebar__menu ul li a {
@@ -982,7 +983,8 @@ img {
   border: #707070 1px solid;
   border-radius: 10px;
   height: 46px;
-  background-color: #F2EDE9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
+  background-image: linear-gradient(#F2EDE9, #DED8D3);
   padding: 12px 23px;
   margin-left: 12px;
 }

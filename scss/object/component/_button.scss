@@ -14,9 +14,9 @@
 
 .c-btn {
     cursor: pointer;
-    &--detail {//グラデーション付け足すこと
+    &--detail {
         @extend %btn;
-        background-color: #F2EDE9;
+        background-image: linear-gradient(#F2EDE9,#DED8D3);
         padding: 28px 0;
         border-color: variable.$headline-color;
         border: 1px solid;
