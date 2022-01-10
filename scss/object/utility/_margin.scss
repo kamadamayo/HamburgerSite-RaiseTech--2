@@ -19,3 +19,9 @@
     margin: 30px auto;
 }
 
+.u-mg--tb30 {
+    margin: 30px 0;
+    @include mixin.pc {
+        margin-bottom: 60px;
+    }
+}

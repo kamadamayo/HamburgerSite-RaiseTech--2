@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!--Google Font 'M PLUS Rounded 1c'-->
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!--CSS-->
@@ -30,7 +32,6 @@
                 <input type="submit" value="検索" class="p-searchform__submit">
             </div>
         </header>
-        <!--↑ ここまでこのまま--> 
         <main class="l-main c-grid">
             <div class="c-mainvisual c-mainvisual--archive">
                 <div class="c-mainvisual__headline">
@@ -42,16 +43,15 @@
                 <img src="./images/mainvisual/archive--pc.png" alt="" class="c-mainvisual__pc">
             </div>
             <section class="p-article u-width--89 u-mg--lr-auto">
-                <dl>
-                    <dt>小見出しが入ります</dt>
-                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    </dd>
-                </dl>
+                <h1>小見出しが入ります</h1>
+                <p class="u-mg--tb30">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
             </section>
             <figure class="p-post">
                 <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech/blob/main/images/archive/archive-visual.png?raw=true" alt="">
@@ -123,8 +123,7 @@
                 </div>
             </div>
         </main>
-        <!--↓ここからこのまま-->
-        <aside id="p-slidemenu" class="l-sidebar l-sidebar__gradient c-grid p-slidemenu u-pd12">
+        <aside id="p-slidemenu" class="l-sidebar c-grid p-slidemenu u-pd12">
             <button class="c-btn__menu c-btn__heading">Menu</button>
             <button id="c-btn__active" class="c-btn__menu c-btn__close u-mg--menu">
                 <span></span>
