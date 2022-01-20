@@ -31,6 +31,13 @@
     }
 }
 
+%imgsize {
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
 .c-mainvisual {
     background-color: #000;
     img {
@@ -68,6 +75,15 @@
         @include mixin.pc {
             padding-top: 5.5%;
         }
+        &--archive {
+            padding-top: 0;
+            position: absolute;
+            top: 102px;
+            @include mixin.pc {
+                top: 0;
+                padding-top: 5.5%;
+            }
+        }
         h2 {
             @extend %h2;
         }
@@ -91,9 +107,11 @@
     }
     &--archive {
         img {
+            @extend %imgsize;
             opacity: .5;
             @include mixin.pc {
                 aspect-ratio: 6/1;
+                height: auto;
             }
         }
     }
